@@ -1,0 +1,59 @@
+header {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    a {
+        color: black;
+
+        &:visited {
+            color: red;
+        }
+
+        &:active {
+            color: blue;
+        }
+    }
+
+    nav {
+        padding: 1em;
+        color: red;
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        left: 0;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .none {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        padding: 1em 4em;
+
+        nav {
+            display: block;
+            padding: 0;
+            position: relative;
+            background-color: white;
+            width: 70%;
+            top: 0;
+            color: rgba(21, 12, 33, 0.59);
+        }
+        .none {
+            display: block;
+        }
+        
+        .mobile {
+            display: none;
+        }
+
+    }
+}
