@@ -1,21 +1,17 @@
 import React from 'react'
-import Card from '../ui/Card'
+import Images from '../../components/img/Images'
 const MeetUpItems = (props) => {
     return (
         <li className='items'>
-            <Card>
-                <img className='image' src={props.photo} alt={props.title} />
-                <span className='content'>
-                    <h2>{props.title}</h2>
-                    <address>{props.address}</address>
-                    <p>{props.description}</p>
-                </span>
-                <div className='actions'>
-                    <button>Add to favorites</button>
-                </div>
-            </Card>
+            <img className='image' src={Images.me} alt='me' />
+            <span className='content' >
+                <h4>Name: <small>Ademola Sikiru</small></h4>
+                <h4>Location: <address>Kemta Housing estate idi aba</address></h4>
+                <h4>Description: <small>Light skinned, rich, software developer</small></h4>
+                <button className='actions'> Addd To favorite</button>
+            </span >
         </li>
     )
 }
 
-export default MeetUpItems
+export default MeetUpItems;

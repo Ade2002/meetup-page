@@ -16,6 +16,7 @@ html {
 }
 
 body {
+    width: 100%;
     overflow: auto;
     box-sizing: border-box;
     color: $textColor;
@@ -23,6 +24,10 @@ body {
 
 h1 {
     @include heading;
+}
+
+h4 {
+    font-size: 14px;
 }
 
 button {
@@ -33,12 +38,53 @@ button {
 form {
     width: 100%;
     margin: 1em 0 3em 0;
+
     @include media($tablet) {
         margin: 0;
         @include flex(column, center, flex-start);
     }
 }
-address{
+
+address {
     display: inline;
-    font-size: 15px;
+    font-size: 12px;
+    font-style: normal;
+}
+
+main {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    width: 100%;
+    @include flex(column, center, center);
+
+    @include media($tablet) {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li {
+        width: 90%;
+        max-width: 400px;
+        background-color: white;
+        border-radius: 6px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0.2);
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+        @include media($tablet) {
+            min-width: 200px;
+        }
+    }
+}
+
+small {
+    font-size: 12px;
 }

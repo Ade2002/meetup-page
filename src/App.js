@@ -7,13 +7,13 @@ import Layout from './layouts/Layout';
 function App() {
   return (
     <Layout>
-      <main>
+      <>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/new' element={<New />} />
           <Route path='/favorites' element={<Favorites />} />
         </Routes>
-      </main>
+      </>
     </Layout>
   );
 }
