@@ -14,7 +14,7 @@ export const Header = () => {
     return (
         <header>
             <Link to="/" className="logo">
-                <h1 width="34" height="43">MEETUPS</h1>
+                <h1 width="34" height="43">HOOKUPS</h1>
             </Link>
             <nav className="navigate none">
                 <Link to="/new"> New</Link>

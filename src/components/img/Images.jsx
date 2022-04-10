@@ -1,4 +1,5 @@
 import wares from "./wares.png"
+import me from "./me.jpg"
 import device from "./device.png"
 import acessories from "./acessories.png"
 import appliances from "./appliances.png"
@@ -8,6 +9,7 @@ const Images = {
     device,
     acessories,
     appliances,
-    gadgets
+    gadgets,
+    me
 }
 export default Images

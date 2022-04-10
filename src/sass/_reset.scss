@@ -38,9 +38,7 @@ form {
         @include flex(column, center, flex-start);
     }
 }
-small{
-    display: block;
-    text-align: center !important;
-    margin: auto;
-    padding: 0 2em;
+address{
+    display: inline;
+    font-size: 15px;
 }
