@@ -5,8 +5,8 @@ export const Header = () => {
          document.title = 'hi'
 
         })
-       const nav = document.querySelector('nav')
         const headerFunction = () => {
+            const nav = document.querySelector('nav')
             nav.classList.toggle('none')
         }
  
@@ -14,7 +14,7 @@ export const Header = () => {
     return (
         <header>
             <a href="/" className="logo">
-                <h1 width="34" height="43">LOGO</h1>
+                <h1 width="34" height="43">MEETUPS</h1>
             </a>
             <nav className="navigate none">
                 <a href="/"> Tech Acad</a>
@@ -34,3 +34,4 @@ export const Header = () => {
         </header>
     )
 }
+export default Header;
