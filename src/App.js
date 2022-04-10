@@ -1,13 +1,12 @@
 import { Route, Routes } from 'react-router-dom'
-import { Header } from "./layouts/Header";
 import Home from './components/pages/Home';
 import New from './components/pages/New';
 import Favorites from './components/pages/Favorites';
 import './sass/style.scss'
+import Layout from './layouts/Layout';
 function App() {
   return (
-    <div className="App">
-      <Header />
+    <Layout>
       <main>
         <Routes>
           <Route path='/' element={<Home />} />
@@ -15,7 +14,7 @@ function App() {
           <Route path='/favorites' element={<Favorites />} />
         </Routes>
       </main>
-    </div>
+    </Layout>
   );
 }
 
