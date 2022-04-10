@@ -4,6 +4,7 @@ import New from './components/pages/New';
 import Favorites from './components/pages/Favorites';
 import './sass/style.scss'
 import Layout from './layouts/Layout';
+import {FavoritesContextprovider} from 
 function App() {
   return (
     <Layout>
