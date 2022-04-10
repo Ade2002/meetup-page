@@ -4,22 +4,25 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
-
+    background-color: $headerbgcolor;
+    .logo{
+        font-size: 3em;
+    }
     a {
-        color: black;
+        color: white;
 
         &:visited {
-            color: red;
+            color: white;
         }
 
         &:active {
             color: blue;
         }
     }
-
+  
     nav {
         padding: 1em;
-        color: red;
+        color: black;
         position: absolute;
         background-color: black;
         width: 100%;
@@ -31,6 +34,13 @@ header {
     .none {
         display: none;
     }
+    .badge{
+        background-color: #cc2062;
+        color: white;
+        border-radius: 14px;
+        padding: 0 1em;
+        margin-left: 0.5rem;
+    }
     
 }
 
@@ -39,13 +49,17 @@ header {
         padding: 1em 4em;
 
         nav {
-            display: block;
             padding: 0;
             position: relative;
-            background-color: white;
-            width: 70%;
+            background-color: $headerbgcolor;
+            width: 50%;
             top: 0;
             color: rgba(21, 12, 33, 0.59);
+            font-size: 1em;
+            font-weight: 900;
+            a{
+                margin-right: 1em;
+            }
         }
         .none {
             display: block;

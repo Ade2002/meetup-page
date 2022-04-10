@@ -1,5 +1,6 @@
 import React,{useEffect} from 'react'
 
+import { Link } from 'react-router-dom'
 export const Header = () => {
     useEffect(() => {
          document.title = 'hi'
@@ -10,18 +11,14 @@ export const Header = () => {
             nav.classList.toggle('none')
         }
  
-    
     return (
         <header>
-            <a href="/" className="logo">
+            <Link to="/" className="logo">
                 <h1 width="34" height="43">MEETUPS</h1>
-            </a>
+            </Link>
             <nav className="navigate none">
-                <a href="/"> Tech Acad</a>
-                <a href="/"> QHSE</a>
-                <a href="/"> Stem Acad</a>
-                <a href="/"> Workstation </a>
-                <a href="/"> Contact </a>
+                <Link to="/new"> New</Link>
+                <Link to="/favorites"> Favorites</Link>
             </nav>
             <span className="mobile" onClick={headerFunction}>
                 <svg className="bar" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd"
