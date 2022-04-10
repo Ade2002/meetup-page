@@ -1,8 +1,8 @@
 import React from 'react'
-
-const Card = () => {
+import classes from './Card.module.scss'
+const Card = (props) => {
   return (
-    <div>Card</div>
+    <div className={classes.card}>{props.children}</div>
   )
 }
 
