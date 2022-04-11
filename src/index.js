@@ -2,12 +2,16 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router } from "react-router-dom";
 import App from './App';
+import { FavoritesContextprovider } from './store/favorites-context'
 import reportWebVitals from './reportWebVitals';
 const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(
-    <Router>
-        <App tab="home" />
-    </Router>
+    <FavoritesContextprovider>
+        <Router>
+            <App tab="home" />
+        </Router>
+    </FavoritesContextprovider>
+
 );
 reportWebVitals();

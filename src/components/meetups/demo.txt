@@ -24,3 +24,8 @@
                 <div className='actions'>
                     <button>Add to favorites</button>
                 </div>
+
+
+
+                regarding tuesday frontend guys will be having their final group presntation presentation.
+                update on mr yaqson and emilio 

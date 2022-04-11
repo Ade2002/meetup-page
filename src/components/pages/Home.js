@@ -31,7 +31,7 @@ const Home = () => {
         </section>
     } 
     return (<>
-        <h1>All meet ups</h1>
+        <h1>All Hookups</h1>
         <ul>
             <MeetUPList meetups={updated} /> 
         </ul>

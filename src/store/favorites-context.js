@@ -35,4 +35,4 @@ export const FavoritesContextprovider = (props) => {
         </Favoritescontext.Provider>
     )
 }
-export default Favoritescontext
+export default Favoritescontext;
