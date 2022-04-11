@@ -1,9 +1,11 @@
-import React,{useEffect} from 'react'
-
+import React,{useEffect,useContext} from 'react'
 import { Link } from 'react-router-dom'
+import Favoritescontext from '../store/favorites-context'
+
 export const Header = () => {
+    const favoritesCtx = useContext(Favoritescontext)
     useEffect(() => {
-         document.title = 'hi'
+         document.title = 'h0me'
 
         })
         const headerFunction = () => {
@@ -18,7 +20,7 @@ export const Header = () => {
             </Link>
             <nav className="navigate none">
                 <Link to="/new"> New</Link>
-                <Link to="/favorites"> Favorites</Link>
+                <Link to="/favorites"> Favorites <span className='badge'>{favoritesCtx.totalFavorites}</span></Link>
             </nav>
             <span className="mobile" onClick={headerFunction}>
                 <svg className="bar" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd"

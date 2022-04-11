@@ -33,7 +33,7 @@ const Home = () => {
     return (<>
         <h1>All Hookups</h1>
         <ul>
-            <MeetUPList meetups={updated} /> 
+            <MeetUPList meetups={DUMMYDATA} /> 
         </ul>
 
     </>
