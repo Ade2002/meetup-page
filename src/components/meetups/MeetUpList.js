@@ -4,7 +4,7 @@ const MeetUPList = (props) => {
     return (
         <ul className='list'>
             {
-                props.meetups.map(meetup => <MeetUpItems
+                props.meetups.map((meetup) => <MeetUpItems
                     key={meetup.id}
                     id={meetup.id}
                     photo={meetup.photo}

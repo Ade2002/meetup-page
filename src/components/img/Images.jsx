@@ -1,15 +1,14 @@
-import wares from "./wares.png"
-import me from "./me.jpg"
-import device from "./device.png"
-import acessories from "./acessories.png"
-import appliances from "./appliances.png"
-import gadgets from "./gadgets.png"
+import me from "./withbackground/me.jpg"
+import fathia from "./withbackground/fathia.jpg"
+import purity from "./withbackground/purity.jpg"
+import elonmusk from "./withbackground/elonmusk.jpg"
+import brotherbond from "./withbackground/brotherbond.jpg"
+
 const Images = {
-    wares,
-    device,
-    acessories,
-    appliances,
-    gadgets,
-    me
+    me,
+    brotherbond,
+    fathia,
+    purity,
+    elonmusk,
 }
 export default Images

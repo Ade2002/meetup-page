@@ -5,7 +5,7 @@ import Favoritescontext from '../store/favorites-context'
 export const Header = () => {
     const favoritesCtx = useContext(Favoritescontext)
     useEffect(() => {
-         document.title = 'h0me'
+         document.title = 'home'
 
         })
         const headerFunction = () => {

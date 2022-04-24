@@ -1,42 +1,37 @@
 import React, { useState, useEffect } from 'react'
 import MeetUPList from '../meetups/MeetUpList'
-import { DUMMYDATA } from '../../layouts/DummyData' 
-import Images from '../../components/img/Images'
+import { DUMMYDATA } from '../../layouts/DummyData'
 const Home = () => {
-     const [updating, setIsUpdating] = useState(true)
-    const [updated, setIsUpdated] = useState([])
-
+    const [updating, setIsUpdating] = useState(true)
+    /* const [updated, setIsUpdated] = useState([]) */
     useEffect(() => {
         document.title = 'Meetup Page'
         setIsUpdating(true)
-        fetch('https://meetups-7ed71-default-rtdb.firebaseio.com/meetuptable.json').then(res => {
-            res.json()
-        }).then(data => {
-            const meetups = []
-
-            for (const key in data) {
-                const meetUp = {
-                    id: key,
-                    ...data[key]
+        /* fetch('https://meetups-7ed71-default-rtdb.firebaseio.com/meetuptable.json')
+            .then(res => res.json()).then(data => {
+                console.log(data)
+                setIsUpdating(false)
+                const meetups = []
+                for (const key in data) {
+                    const meetUp = {
+                        id: key,
+                        ...data[key]
+                    }
+                    meetups.push(meetUp)
                 }
-                meetups.push(meetUp)
-            }
-            setIsUpdating(false)
-            setIsUpdated(meetups)
-        })
+                setIsUpdated(meetups)
+            }) */
     }, [])
-    if (updating) {
-        return <section>
-            <p>Loading...</p>
-        </section>
-    } 
-    return (<>
-        <h1>All Hookups</h1>
-        <ul>
-            <MeetUPList meetups={DUMMYDATA} /> 
-        </ul>
 
-    </>
+    return (
+        <>
+            <h1>All Hookups</h1>
+            {updating ? <p>Loading</p> : ""}
+            <ul>
+                <MeetUPList meetups={DUMMYDATA} />
+            </ul>
+
+        </>
     )
 }
 
