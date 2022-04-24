@@ -79,8 +79,22 @@ ul {
         box-shadow: 0px 2px 8px rgba(0, 0, 0.2);
         padding-bottom: 1em;
         margin-bottom: 1em;
+        
         @include media($tablet) {
             min-width: 200px;
+            border-radius: 6px;
+            &:hover {
+                background-color: $headerbgcolor;
+                transform: scale(1.1);
+                color: white;
+                box-shadow: 0px 2px 8px rgba(0, 0, 0.2);
+                transition: transform 0.3s ease-out;
+                button{
+                    background-color: white;
+                    color: black;
+                }
+            }
+
         }
     }
 }

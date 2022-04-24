@@ -10,7 +10,7 @@ const MeetUPList = (props) => {
                     photo={meetup.photo}
                     title={meetup.title}
                     address={meetup.address}
-                    description={meetup.description}
+                    description={meetup.description.length>45?`${meetup.description.slice(0, 17)}...` : meetup.description}
                 />)
             }
         </ul>
