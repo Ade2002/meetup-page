@@ -122,7 +122,7 @@
 }
 
 .flex {
-    @include flex(column);
+    @include flexy(column);
     max-width: 100%;
     overflow: hidden;
 
@@ -147,7 +147,7 @@
     $row: &+_r;
 
     @at-root #{$column} {
-        @include flex(column);
+        @include flexy(column);
 
         @at-root &r {
             @extend #{$column};
@@ -167,7 +167,7 @@
     }
 
     @at-root #{$row} {
-        @include flex(row);
+        @include flexy(row);
 
         @at-root &c {
             @extend #{$row};

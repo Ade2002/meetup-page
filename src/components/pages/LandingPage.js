@@ -2,7 +2,7 @@ import React from 'react'
 
 const LandingPage = () => {
     return (
-        <div>
+        <section>
             Are you bored?
             Do you need someone to spend time with?
             Hook or get hooked by anyone close to you in less than 30Minutes.
@@ -12,7 +12,7 @@ const LandingPage = () => {
              meet amazing people from your nighborhood.
             The fastest Possible way to make friends and interact.
             Get STARTED HERE..
-        </div>
+        </section>
     )
 }
 

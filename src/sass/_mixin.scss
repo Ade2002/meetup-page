@@ -2,7 +2,19 @@
     text-align: center;
     font-size: $headingFontSize;
 }
-
+@mixin flex($fd, $justify, $align) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $justify;
+    align-items: $align;
+    @content;
+}
+@mixin flexy($direction:row, $justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+  }
 @mixin btn {
     background: $altTextColor;
     border-radius: $borderradius;
@@ -19,14 +31,6 @@
     @media only screen and (#{$type}-width:$device) {
         @content;
     }
-}
-
-@mixin flex($fd, $justify, $align) {
-    display: flex;
-    flex-direction: $fd;
-    justify-content: $justify;
-    align-items: $align;
-    @content;
 }
 
 @mixin srcset($device:$tablet) {
