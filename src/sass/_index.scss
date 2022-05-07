@@ -1,5 +1,9 @@
-@import "variables";
-@import "mixin";
-@import "classes";
 @import "reset";
 @import "header";
+@import "/modules/variables";
+@import "modules/mixin";
+@import "modules/classes";
+@import "modules/global";
+@import "partial/header";
+@import "partial/body";
+@import "partial/footer";
