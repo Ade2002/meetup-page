@@ -8,7 +8,9 @@ const LandingPage = () => {
             Hook or get hooked by anyone close to you in less than 30Minutes.
             Login or Create an Account for free!!
             Millions of people trust and use Hookup everyday.
-            get to know more people who lives around you meet amazing people from your nighborhood.
+            get to know more about people who lives around you,
+             meet amazing people from your nighborhood.
+            The fastest Possible way to make friends and interact.
             Get STARTED HERE..
         </div>
     )
