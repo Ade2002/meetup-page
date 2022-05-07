@@ -1,0 +1,164 @@
+.none {
+    display: none;
+}
+
+.flex {
+    @include flex(column, center, center)
+}
+
+.db {
+    display: block;
+}
+
+.di {
+    display: inline;
+}
+
+.active {
+    border: 1px solid #1207ab !important;
+    color: #1207ab !important;
+    border-radius: 5px !important;
+    background: none !important;
+
+}
+
+.h_Third_section {
+    @include heading;
+
+    @include media($tablet) {
+        text-align: center;
+        width: 58%;
+    }
+}
+
+.p_Third_section {
+    @include media($tablet) {
+        text-align: center;
+        width: 45%;
+    }
+}
+
+.swiper-slide.swiper-slide-active{
+    display: flex;
+}
+.courses_tab_menu {
+    background-color: #f5f5f5;
+    padding: 10px 50px;
+    border-radius: 10px;
+    @include flex(row, space-between, center);
+    width: 100%;
+    position: relative;
+
+    
+    button {
+        padding: 10px 20px;
+        width: 100%;
+        max-width: 50vw;
+        @include media(400px){
+            max-width: 54vw;
+        }
+        // @include media(600px){
+        // @include media(600px){
+        @include media(600px){
+            // max-width: 75vw;
+            // width: 100%;
+
+        }
+        font-size: 12px;
+        margin: 0 10px;
+        height: auto;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+        border: none;
+        border-radius: 10px;
+        color: rgba(0, 0, 0, 0.7);
+
+        @include media($tablet) {
+            width: 100%;
+            max-width: 100%;
+            font-size: 16px;
+            padding: 10px 10px;
+        }
+
+    }
+}
+
+.card_tab_menu {
+    @include flex(column, center, center);
+
+    @include media($android) {
+        width: 250px;
+    }
+
+    @include media($tablet) {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+
+.card {
+    @include flex(column, center, center);
+    padding: 2em 1em;
+    margin: 0 0.5em;
+    box-sizing: border-box;
+    border: 1px solid #F5F5F5;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 13px;
+
+    &:hover {
+        border: 1px solid #F5F5F5;
+
+    }
+
+    @include media($tablet) {
+        text-align: center;
+    }
+
+    strong {
+        margin-top: 2em;
+    }
+
+    small {
+        text-align: center !important;
+        @include flex(row, left, center);
+        width: 100%;
+
+        strong {
+            margin-top: 0;
+        }
+
+        div {
+            margin-left: 0.5em;
+
+            svg {
+                fill: #FFBA00 !important;
+
+                path {
+                    fill: #FFBA00 !important;
+
+                }
+            }
+        }
+
+    }
+
+    .types_tab_menu {
+        background-color: #f5f5f5;
+        width: 100%;
+        border-radius: 13px;
+        padding: 0.5em 1em;
+        @include flex(row, space-between, center);
+
+        span {
+            .price {
+                color: #4B42BD;
+                margin-top: 1em;
+
+            }
+        }
+
+    }
+}

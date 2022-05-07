@@ -20,6 +20,7 @@ export const Header = () => {
             </Link>
             <nav className="navigate none">
                 <Link to="/new"> New</Link>
+                <Link to="/home"> Home</Link>
                 <Link to="/favorites"> Favorites <span className='badge'>{favoritesCtx.totalFavorites}</span></Link>
                 <Link to="/login"> Log In</Link>
                 <Link to="/signup"> Sign Up</Link>
