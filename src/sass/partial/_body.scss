@@ -37,7 +37,7 @@ section {
     @include media {
       flex-direction: row;
       background: {
-        image: url(../../components/img/circleBackground.svg);
+        // image: url(../../components/img/circleBackground.svg);
         repeat: no-repeat;
         position: 200% -100%;
         size: 75% 75%;
@@ -154,7 +154,8 @@ section {
     );
     @include media {
       background: {
-        image: url( ../../components/img/airship.svg),
+        image: 
+        // url( ../../components/img/airship.svg),
           linear-gradient(0deg, #a5a6f6 -11.14%, rgba(252, 221, 236, 0) 28.68%);
         repeat: no-repeat;
         size: 90%, 100%;
